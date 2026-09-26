@@ -8,15 +8,7 @@ Routing identifies applicable professional authority and relevant constraints fo
 
 ## 2. Authority Order and Normative Conventions
 
-The approved Task-Agent work plan is the primary architectural and delivery authority. Routing MUST use the following seven frozen authority inputs as one coherent revision set:
-
-- `task-agent-work-plan-v1-final.md`, SHA-256 `739e0ca5de4622cbdc11463ce6fc97aa578ba4c7be4d856775f8554d44b6d0c6`;
-- `task-package-schema.md`, SHA-256 `b6850674c1ae3c8b44045f663cbae15c4ea3ae75d63837fd9b7d721eb7f4a793`;
-- `task-authority-model.md`, SHA-256 `0843ec33e62e31c5e1b8e09148a06bc0cb35a3dd3eb4412fd81d6a8e70585a1d`;
-- `minimum-evidence-model.md`, SHA-256 `73f0b67a3cfeaf8bca721c658ef184b9352a2338b19f8f16efc006fa87ab6e85`;
-- `task-status-model.md`, SHA-256 `f8746491fc81dac4dbe015241a0a5a57d8e5d45fefde813738bdeac776cd372b`;
-- `resume-invariant.md`, SHA-256 `127b78dfd678f4f163c97b1c09a2a84a2d0de3111505715a823005213e002766`;
-- `domain-skill-inventory-schema.md`, SHA-256 `60a1efa77e7def05d89aa9d1e6b0f6fb819a0d866e13cb32ecd481e019135be4`.
+The active authorities MUST form one coherent validated set. Concrete file revisions, byte sizes, SHA-256 values, and package identity are governed by the deterministic package manifest.
 
 A substituted, mixed, or unbound revision set MUST NOT be used. The following Foundation contracts are binding within their defined scopes:
 
