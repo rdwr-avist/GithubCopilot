@@ -16,7 +16,7 @@ Tests and validation criteria must not be weakened to obtain a PASS.
 
 This contract governs only resume semantics for the existing five-Agent Task-Agent System. It applies to the reconstruction and validation of an existing Task and its authorized continuation.
 
-It does not redesign the approved architecture, add an Agent, reopen an approved decision, create a future artifact, or grant any role authority that it does not already have. The Foundation artifact governed by F05 is `.github/task-agent-system/foundation/resume-invariant.md`.
+It does not redesign the approved architecture, add an Agent, reopen an approved decision, create a future artifact, or grant any role authority that it does not already have.
 
 ## 4. Normative Conventions
 

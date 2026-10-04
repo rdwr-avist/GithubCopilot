@@ -8,9 +8,9 @@ Routing identifies applicable professional authority and relevant constraints fo
 
 ## 2. Authority Order and Normative Conventions
 
-The active authorities MUST form one coherent validated set. Concrete file revisions, byte sizes, SHA-256 values, and package identity are governed by the deterministic package manifest.
+Use the supplied active authority set.
 
-A substituted, mixed, or unbound revision set MUST NOT be used. The following Foundation contracts are binding within their defined scopes:
+Do not substitute or infer authorities. The following Foundation contracts are binding within their defined scopes:
 
 1. The Task Package Schema governs canonical artifact structure, references, cardinalities, and package relationships.
 2. The Task Authority Model governs ownership, consumer authority, freeze, validity, invalidation, replacement, and rerouting.
@@ -378,7 +378,7 @@ Stage applicability constrains use but does not authorize one role to perform an
 
 Later-stage routing MUST NOT rewrite an earlier frozen result. If later routing changes meaning, selection, consumers, applicability, constraints, or blockers, the producer MUST create a distinguishable replacement result with required predecessor lineage.
 
-Implementer and Reviewer consumers MUST be able to resolve the exact selected content and revision required for their governed work. The Routing Result does not perform that work for them.
+The Routing Result MUST supply each named consumer with the exact selected content and revision required for governed work. Consumers MUST use that supplied selection and MUST NOT independently reselect it. The Routing Result does not perform the governed work for them.
 
 ## 17. Progressive Disclosure and Loading
 
@@ -386,7 +386,7 @@ Routing MUST use bounded inventory metadata before loading complete Skill conten
 
 After selection:
 
-1. the named consumer resolves the exact selected entry and revision;
+1. the named consumer uses the selected entry and revision supplied by the Routing Result;
 2. the consumer loads the approved entrypoint;
 3. the consumer loads only resources whose activation conditions apply to the concern, stage, and intended use;
 4. a required activated resource that cannot be loaded blocks dependent work;

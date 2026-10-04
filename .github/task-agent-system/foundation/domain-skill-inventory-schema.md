@@ -18,11 +18,11 @@ The primary authority is the approved Task Agent work plan. The following Founda
 4. `task-status-model.md` governs canonical statuses, including the three Domain routing statuses.
 5. `resume-invariant.md` governs durable reconstruction, selective invalidation, and no-memory resume.
 
-The conversation-specific F06 assignment narrows this artifact's scope. It does not override a Foundation contract inside that contract's authority. Conversation memory, hidden state, and unstored reasoning are not authority.
+Artifact-specific scope constraints do not override a governing Foundation contract within that contract's authority. Durable authority does not come from conversation memory, hidden state, or unstored reasoning.
 
-The active authorities MUST form one coherent validated set. Concrete file revisions, byte sizes, SHA-256 values, and package identity are governed by the deterministic package manifest.
+Use the supplied active authority set.
 
-A substituted, mixed, or unbound source revision is non-conforming, even when its filename or heading matches.
+Do not substitute or infer authorities.
 
 ## 3. Normative Conventions
 
@@ -49,7 +49,7 @@ Examples are synthetic, non-normative, and subordinate to this schema.
 
 #### Foundation compatibility mapping
 
-This inventory-local `StableRef` serialization is a bounded projection of the canonical `StableRef` in `task-package-schema.md`; it does not redefine that Foundation type. `subject` MUST encode the canonical typed identity (`target_type` plus `target_id`) without loss. The containing member supplies the canonical relationship, `revision` supplies the immutable revision when material, and a durable locator MUST be supplied by the containing structure when identity alone cannot retrieve the target. Consumers MUST reconstruct and validate the complete canonical reference before using it across the Task Work Package boundary.
+This inventory-local `StableRef` serialization is a bounded projection of the canonical `StableRef` in `task-package-schema.md`; it does not redefine that Foundation type. `subject` MUST encode the canonical typed identity (`target_type` plus `target_id`) without loss. The containing member supplies the canonical relationship, `revision` supplies the immutable revision when material, and a durable locator MUST be supplied when identity alone cannot retrieve the target. The containing structure MUST supply a complete canonical reference; consumers MUST use it and MUST NOT infer missing identity or revision.
 
 ### 3.2 SourceRef
 

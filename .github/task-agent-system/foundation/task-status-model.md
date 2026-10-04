@@ -2,7 +2,7 @@
 
 **Canonical path:** `.github/task-agent-system/foundation/task-status-model.md`  
 **Artifact class:** Foundation contract  
-**Working-copy status:** Complete candidate under ordered Test Pack review  
+  
 
 ## 1. Purpose
 
@@ -20,7 +20,7 @@ The approved `task-authority-model.md` is binding for artifact ownership, bounde
 
 The approved `minimum-evidence-model.md` is binding for evidence identity, execution truth, context, mappings, proof strength, freshness, staleness, rerun, Reviewer evidence, and the distinction between success, failure, not-yet-run work, and blocked-before-execution work.
 
-The F04 assignment is binding for the target artifact, required status coverage, the nine required dimensions per status, specific-status precedence over `BLOCKED`, and the prohibition on implementing the Orchestrator state machine here.
+This contract defines the required status coverage, the nine required dimensions per status, specific-status precedence over `BLOCKED`, and the prohibition on implementing the Orchestrator state machine here.
 
 Approved Design, Component Implementation Plan, Component or Interface HLTP, repository evidence, Domain Skills, and durable human decisions remain authoritative only within their defined scopes. Conversation history, hidden state, remembered intermediate drafts, and unapproved drafts are not sources of truth.
 
@@ -28,7 +28,7 @@ When authorities are complementary, every applicable rule MUST be satisfied. A l
 
 Architecture, authority, requirement, and domain-routing conflicts are distinct conflict classes. An unresolved conflict in any of these classes MUST remain durably blocked, MUST retain a `BlockingRef` and resolution owner, and MUST NOT be resolved silently by an Agent, consumer, DP-Task-Orchestrator, package assembler, or Manual Pipeline human state manager. Resolution requires the authority that owns the disputed architecture, authority boundary, requirement meaning, or routing decision.
 
-Approved baselines attached to the current F04 work context are binding within their declared scopes. Previous-conversation content, hidden context, remembered drafts, and undocumented reasoning are not authority. Approved decisions MUST NOT be reopened during status-model authoring unless a higher applicable authority explicitly supersedes them. The target MUST NOT redesign the approved five-Agent architecture or create future artifacts while authoring this Foundation contract.
+
 
 ## 3. Normative Conventions
 
